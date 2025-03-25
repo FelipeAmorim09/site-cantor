@@ -1,0 +1,335 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(206, 205, 205, 0.575);
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between; 
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 18px;
+    align-items: center; 
+    padding: 20px 80px; 
+    background-color: #2B2B2B;
+    z-index: 1000;
+}
+
+.menu-left {
+    display: flex;
+    margin-left: 100px;
+    text-decoration: none;
+    color: white;
+}
+.menu-left h1 {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.menu-right {
+    display: flex;
+    gap: 30px;
+    margin-right: 100px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu-right a {
+    text-decoration: none;
+    color: inherit;
+    gap: 50px;
+    font-size: 18px;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+.menu-right a:hover {
+    transform: scale(1.2);
+    color: #b43535;
+}
+
+/*configurações da Imagem a direita no começo*/
+.container-photo {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    right: 0px; 
+    top: 70px; 
+    width: 20%;
+    max-width: 300px; 
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+.container-photo:hover{
+    transform: scale(1.10);
+}
+
+/*Essa seção configura o texto no começo do site*/
+.text-top-left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 300px;
+    padding: 20px;
+    width: 900px;
+    transition: transform 0.5s ease;
+}
+.text-top-left p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 85);
+}
+.text-top-left h1{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-top-left:hover{
+    transform: scale(1.02);
+}
+
+/*Aqui começa a parte do card texto e imagem*/
+.card-center-project{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card-center-project h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.card-center-project p{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Essa seção configura os cards info/imagem*/
+.card-box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 1000px;
+}
+
+/*card box esquerdo*/
+.card-box-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: transform 0.5 ease;
+    transform-origin: left end;
+}
+.card-box-left:hover{
+    transform: scale(1.02) translateX(-1px);
+}
+/*Config texto*/
+.card-box-left h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.card-box-left p{
+    text-align: justify;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Config imagem*/
+.card-box-left img{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    transition: transform 0.3s ease;
+    transform-origin: left end;
+}
+.card-box-left img:hover{
+    transform: scale(1.02) translateX(px);
+}
+/*Config botão*/
+.card-box-left button{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(56, 55, 55); 
+    width: 120px;
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.card-box-left button:hover{
+    transform: translateX(10px);
+    background-color: white;
+    color: black;
+}
+
+/*card box direito*/
+.card-box-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.card-box-right:hover{
+    transform: scale(1.02) translateX(1px);
+}
+/*Config texto*/
+.card-box-right h1{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.card-box-right p{
+    text-align: justify;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Config imagem*/
+.card-box-right img{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: transform 0.3s ease;
+    transform-origin: right end;
+}
+.card-box-right img:hover{
+    transform: scale(1.02) translateX(px);
+}
+/*Config botão*/
+.card-box-right button{
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(56, 55, 55); 
+    width: 120px;
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: transform 1s ease;
+}
+.card-box-right button:hover{
+    transform: rotate(3deg);
+    background-color: white;
+    color: black;
+}
+
+/*Começa o estilo do botão*/
+.button-top {
+    margin-top: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(56, 55, 55); 
+    width: 120px;
+    font-size: 16px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: transform 1s ease;
+}
+.button-top:hover{
+    transform: rotate(3deg);
+    background-color: white;
+    color: black;
+}
+
+
+.form-duvidas {
+    width: 100%;  
+    max-width: 400px; 
+    margin: auto;
+    padding: 50px; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, Helvetica, sans-serif; 
+    margin-bottom: 100px;
+    margin-top: 60px;
+}
+
+.form-duvidas label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-duvidas input{
+    background-color: white;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 50px;
+    padding: 10px;
+}
+
+.form-duvidas button{
+    display: flex;
+    justify-content: center;
+    width: 100px; 
+    height: 40px;
+    background-color: #2B2B2B;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.form-duvidas button:hover {
+    transform: scale(1.2);
+    color: #ffffff;
+}
+
+
+.footer {
+    background-color: #2B2B2B; 
+    color: #ffffff; 
+    text-align: center; 
+    padding: 10px 0; 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
+    position: relative; 
+    bottom: 0;  
+    width: 100%; 
+}
+
+
+
+
+/*Ajusta o NavBar para nnão ficar em cima do texto quando usa as opções*/
+section {
+    position: relative; 
+}
+section::before {
+    content: "";
+    display: block;
+    height: 18px; 
+    margin-top: 80px;
+    visibility: hidden;
+}
